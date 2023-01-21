@@ -39,6 +39,10 @@ def youtube(list_game, game, file):
     # This function calls the request_youtube function, and returns all the data we need
     # for our study.
 
+    # list_game: it has all the Youtube Video IDs from the game.
+    # game: we create a new column with game ID (game) so we can give each video an ID.
+    # file: the name file we want to have in our computer.
+
     results = []
     for id in list_game:
         results.append(request_youtube(id))
@@ -71,7 +75,7 @@ def youtube(list_game, game, file):
             dict_game["commentCount"].append(result["items"][0]["statistics"].get("commentCount"))
 
     df_juego = pd.DataFrame(dict_game)
-    df_juego["game"] = game
+    df_juego["juego"] = game
     return df_juego.to_csv(f"../data/youtube/api/{file}_raw")
 
 
