@@ -5,8 +5,6 @@ import requests
 import re
 import sqlalchemy as alch
 from getpass import getpass
-import os
-from dotenv import load_dotenv
 
 
 # ------------------------------------------- YOUTUBE --------------------------------------------------
@@ -145,20 +143,11 @@ def cleaning(csv, juego_path):
 
     # --------------------------------------- One game analysis ------------------------------------------
 
-def sql_connection():
-    db_name = "videogames_industry"
-    sql = os.getenv("MySQLPassword")
-    conexion = f"mysql+pymysql://root:{sql}@localhost/{db_name}"
-    engine = alch.create_engine(conexion)
-
-
 def select_sql_table(table):
-    # This function returns a dataframe of a table from the SQL DataBase
     db_name = "videogames_industry"
-    sql = os.getenv("MySQLPassword")
-    conexion = f"mysql+pymysql://root:{sql}@localhost/{db_name}"
+    password = getpass("Contraseña de MySQL: ")
+    conexion = f"mysql+pymysql://root:{password}@localhost/{db_name}"
     engine = alch.create_engine(conexion)
-
     query = f'''SELECT * FROM videogames_industry.{table};'''
     df = pd.read_sql(query, engine)
     return df
