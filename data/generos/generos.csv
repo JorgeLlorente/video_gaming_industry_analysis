@@ -39,10 +39,8 @@
 17,The Crew 2,Automobile
 19,Stardew Valley,General
 19,Stardew Valley,Role-Playing
-19,Stardew Valley,General
 21,The Elder Scrolls Online,First-Person
 21,The Elder Scrolls Online,Role-Playing
-21,The Elder Scrolls Online,First-Person
 21,The Elder Scrolls Online,Massively Multiplayer Online
 21,The Elder Scrolls Online,Massively Multiplayer
 21,The Elder Scrolls Online,Fantasy
@@ -74,7 +72,6 @@
 31,Heroes of Newerth,Real-Time
 31,Heroes of Newerth,Fantasy
 31,Heroes of Newerth,MOBA
-31,Heroes of Newerth,MOBA
 32,Persona 5 Royal,Role-Playing
 32,Persona 5 Royal,Japanese-Style
 33,Heroes of the Storm,Action
@@ -86,16 +83,13 @@
 34,Days Gone,Open-World
 35,Wreckfest,Driving
 35,Wreckfest,General
-35,Wreckfest,General
 35,Wreckfest,Racing
 35,Wreckfest,Arcade
 35,Wreckfest,Automobile
 36,Terraria,Action
 36,Terraria,Action Adventure
 36,Terraria,Platformer
-36,Terraria,Platformer
 36,Terraria,Sandbox
-36,Terraria,2D
 36,Terraria,2D
 37,NBA 2K19,Arcade
 37,NBA 2K19,Sports
@@ -121,9 +115,7 @@
 44,Rise of the Tomb Raider,Linear
 46,Tom Clancy's The Division,Shooter
 46,Tom Clancy's The Division,Modern
-46,Tom Clancy's The Division,Modern
 46,Tom Clancy's The Division,Action
-46,Tom Clancy's The Division,Shooter
 46,Tom Clancy's The Division,Third-Person
 46,Tom Clancy's The Division,Tactical
 46,Tom Clancy's The Division,Arcade
@@ -134,14 +126,11 @@
 48,Mass Effect,Western-Style
 51,The Witcher 3: Wild Hunt,Action RPG
 51,The Witcher 3: Wild Hunt,Role-Playing
-51,The Witcher 3: Wild Hunt,Action RPG
 53,Control,Action Adventure
 53,Control,General
 54,Homefront: The Revolution,Shooter
 54,Homefront: The Revolution,Modern
-54,Homefront: The Revolution,Modern
 54,Homefront: The Revolution,Action
-54,Homefront: The Revolution,Shooter
 54,Homefront: The Revolution,First-Person
 54,Homefront: The Revolution,Arcade
 56,Life is Strange: Before the Storm,Action Adventure
@@ -154,9 +143,7 @@
 58,World of Warcraft,Massively Multiplayer
 58,World of Warcraft,Board / Card Game
 58,World of Warcraft,Fantasy
-58,World of Warcraft,Fantasy
 59,The Elder Scrolls V: Skyrim,Role-Playing
-59,The Elder Scrolls V: Skyrim,First-Person
 59,The Elder Scrolls V: Skyrim,First-Person
 59,The Elder Scrolls V: Skyrim,Western-Style
 61,League of Legends,Role-Playing
@@ -164,12 +151,9 @@
 61,League of Legends,Action RPG
 61,League of Legends,Real-Time
 61,League of Legends,MOBA
-61,League of Legends,MOBA
 64,Call of Duty: Ghosts,Action
 64,Call of Duty: Ghosts,Shooter
-64,Call of Duty: Ghosts,Shooter
 64,Call of Duty: Ghosts,First-Person
-64,Call of Duty: Ghosts,Modern
 64,Call of Duty: Ghosts,Modern
 64,Call of Duty: Ghosts,Arcade
 65,Back 4 Blood,Action Adventure
@@ -180,9 +164,7 @@
 65,Back 4 Blood,Arcade
 66,Black Mesa,Action
 66,Black Mesa,Shooter
-66,Black Mesa,Shooter
 66,Black Mesa,First-Person
-66,Black Mesa,Sci-Fi
 66,Black Mesa,Sci-Fi
 66,Black Mesa,Arcade
 67,Mortal Kombat X,Action
@@ -201,7 +183,6 @@
 72,Mutant Year Zero: Road to Eden,Tactics
 74,Outlast,Horror
 74,Outlast,Action Adventure
-74,Outlast,Horror
 74,Outlast,Survival
 75,Road 96,Adventure
 75,Road 96,3D
@@ -212,7 +193,6 @@
 77,ArcheAge,Role-Playing
 77,ArcheAge,Massively Multiplayer Online
 77,ArcheAge,Massively Multiplayer
-77,ArcheAge,Fantasy
 77,ArcheAge,Fantasy
 78,Trackmania,Racing
 78,Trackmania,Arcade
@@ -225,7 +205,6 @@
 80,South Park: The Fractured But Whole,General
 81,Pillars of Eternity,PC-style RPG
 81,Pillars of Eternity,Third-Person
-81,Pillars of Eternity,PC-style RPG
 81,Pillars of Eternity,Role-Playing
 81,Pillars of Eternity,Western-Style
 82,Legends of Runeterra,Strategy
@@ -235,7 +214,6 @@
 83,Slay the Spire,Turn-Based
 83,Slay the Spire,Card Battle
 85,Kerbal Space Program,Sci-Fi
-85,Kerbal Space Program,Small Spaceship
 85,Kerbal Space Program,Small Spaceship
 85,Kerbal Space Program,Simulation
 85,Kerbal Space Program,Space
@@ -288,9 +266,7 @@
 107,Battlefield 1,Tactical
 108,Left 4 Dead 2,Action
 108,Left 4 Dead 2,Shooter
-108,Left 4 Dead 2,Shooter
 108,Left 4 Dead 2,First-Person
-108,Left 4 Dead 2,Sci-Fi
 108,Left 4 Dead 2,Sci-Fi
 108,Left 4 Dead 2,Tactical
 109,ReCore,Action Adventure
@@ -342,7 +318,6 @@
 132,Gang Beasts,Party / Minigame
 133,Dark Souls II,Action RPG
 133,Dark Souls II,Role-Playing
-133,Dark Souls II,Action RPG
 134,Wolfenstein II: The New Colossus,Action
 134,Wolfenstein II: The New Colossus,Shooter
 134,Wolfenstein II: The New Colossus,First-Person
@@ -369,15 +344,11 @@
 142,The Bunker,Point-and-Click
 143,Mass Effect: Andromeda,Action RPG
 143,Mass Effect: Andromeda,Role-Playing
-143,Mass Effect: Andromeda,Action RPG
 144,Call of Duty: Modern Warfare 3,Action
-144,Call of Duty: Modern Warfare 3,Shooter
 144,Call of Duty: Modern Warfare 3,Shooter
 144,Call of Duty: Modern Warfare 3,First-Person
 144,Call of Duty: Modern Warfare 3,Modern
-144,Call of Duty: Modern Warfare 3,Modern
 144,Call of Duty: Modern Warfare 3,Arcade
-145,Star Wars Battlefront,General
 145,Star Wars Battlefront,General
 145,Star Wars Battlefront,Action
 145,Star Wars Battlefront,Shooter
@@ -394,11 +365,9 @@
 151,Dishonored,Action Adventure
 151,Dishonored,Modern
 151,Dishonored,General
-151,Dishonored,Modern
 152,Aion,Role-Playing
 152,Aion,Massively Multiplayer Online
 152,Aion,Massively Multiplayer
-152,Aion,Fantasy
 152,Aion,Fantasy
 153,Outward,Role-Playing
 153,Outward,Action Adventure
@@ -407,9 +376,7 @@
 153,Outward,Open-World
 154,Borderlands,Action
 154,Borderlands,Shooter
-154,Borderlands,Shooter
 154,Borderlands,First-Person
-154,Borderlands,Sci-Fi
 154,Borderlands,Sci-Fi
 154,Borderlands,Arcade
 156,Sniper Elite 4,Action
@@ -451,21 +418,15 @@
 169,Firewatch,First-Person
 170,Star Wars Battlefront II,Action
 170,Star Wars Battlefront II,Shooter
-170,Star Wars Battlefront II,Shooter
 170,Star Wars Battlefront II,First-Person
-170,Star Wars Battlefront II,Sci-Fi
 170,Star Wars Battlefront II,Sci-Fi
 170,Star Wars Battlefront II,Arcade
 171,Final Fantasy VIII,Role-Playing
-171,Final Fantasy VIII,Console-style RPG
 171,Final Fantasy VIII,Console-style RPG
 171,Final Fantasy VIII,Japanese-Style
 172,The Witness,Miscellaneous
 172,The Witness,Puzzle
 172,The Witness,General
-172,The Witness,General
-172,The Witness,Puzzle
-172,The Witness,Puzzle
 172,The Witness,Adventure
 172,The Witness,3D
 172,The Witness,First-Person
@@ -494,7 +455,6 @@
 185,Guild Wars 2,Massively Multiplayer Online
 185,Guild Wars 2,Massively Multiplayer
 185,Guild Wars 2,Fantasy
-185,Guild Wars 2,Fantasy
 186,Football Manager 2019,Sports
 186,Football Manager 2019,Team
 186,Football Manager 2019,Soccer
@@ -513,7 +473,6 @@
 195,War Thunder,Action
 195,War Thunder,Simulation
 195,War Thunder,Flight
-195,War Thunder,Flight
 195,War Thunder,Vehicle
 195,War Thunder,Combat
 196,Pathfinder: Kingmaker,Role-Playing
@@ -524,12 +483,9 @@
 197,Star Wars Jedi: Fallen Order,General
 198,Team Fortress 2,Action
 198,Team Fortress 2,Shooter
-198,Team Fortress 2,Shooter
 198,Team Fortress 2,First-Person
 198,Team Fortress 2,Modern
 198,Team Fortress 2,Tactical
-198,Team Fortress 2,Modern
-199,Dying Light,Horror
 199,Dying Light,Horror
 199,Dying Light,Action Adventure
 199,Dying Light,Survival
@@ -539,7 +495,6 @@
 201,Mafia II,Action Adventure
 201,Mafia II,Historic
 201,Mafia II,General
-201,Mafia II,Historic
 201,Mafia II,Open-World
 202,Hades,Role-Playing
 202,Hades,Action Adventure
@@ -556,34 +511,26 @@
 207,World of Tanks,Action
 207,World of Tanks,Simulation
 207,World of Tanks,Shooter
-207,World of Tanks,Shooter
 207,World of Tanks,Vehicle
 207,World of Tanks,Third-Person
 207,World of Tanks,Combat
 207,World of Tanks,Tactical
 207,World of Tanks,Historic
-207,World of Tanks,Historic
 208,Call of Duty 4: Modern Warfare,Action
 208,Call of Duty 4: Modern Warfare,Shooter
-208,Call of Duty 4: Modern Warfare,Shooter
 208,Call of Duty 4: Modern Warfare,First-Person
-208,Call of Duty 4: Modern Warfare,Modern
 208,Call of Duty 4: Modern Warfare,Modern
 208,Call of Duty 4: Modern Warfare,Arcade
 209,Watch Dogs 2,Action Adventure
 209,Watch Dogs 2,Open-World
 210,Metro: Last Light,Action
 210,Metro: Last Light,Shooter
-210,Metro: Last Light,Shooter
 210,Metro: Last Light,First-Person
-210,Metro: Last Light,Sci-Fi
 210,Metro: Last Light,Sci-Fi
 210,Metro: Last Light,Arcade
 211,Borderlands 2,Action
 211,Borderlands 2,Shooter
-211,Borderlands 2,Shooter
 211,Borderlands 2,First-Person
-211,Borderlands 2,Sci-Fi
 211,Borderlands 2,Sci-Fi
 211,Borderlands 2,Arcade
 212,Divinity: Original Sin II,Action RPG
@@ -698,8 +645,6 @@
 260,Mirror's Edge Catalyst,Shooter
 260,Mirror's Edge Catalyst,First-Person
 260,Mirror's Edge Catalyst,Modern
-260,Mirror's Edge Catalyst,Modern
-260,Mirror's Edge Catalyst,Modern
 260,Mirror's Edge Catalyst,Action Adventure
 260,Mirror's Edge Catalyst,General
 263,Tales of Berseria,Japanese-Style
@@ -709,7 +654,6 @@
 264,The Sims 4,Simulation
 264,The Sims 4,Miscellaneous
 264,The Sims 4,Virtual
-264,The Sims 4,Virtual Life
 266,Naruto Shippuden: Ultimate Ninja Storm 4,Action
 266,Naruto Shippuden: Ultimate Ninja Storm 4,Fighting
 266,Naruto Shippuden: Ultimate Ninja Storm 4,3D
@@ -721,7 +665,6 @@
 270,Madden NFL 19,Sim
 273,Deus Ex: Human Revolution - Director's Cut,Action Adventure
 273,Deus Ex: Human Revolution - Director's Cut,Sci-Fi
-273,Deus Ex: Human Revolution - Director's Cut,Sci-Fi
 273,Deus Ex: Human Revolution - Director's Cut,General
 275,Devil May Cry 5,Action Adventure
 275,Devil May Cry 5,General
@@ -729,7 +672,6 @@
 276,Resident Evil 2,Survival
 277,Cyberpunk 2077,Action RPG
 277,Cyberpunk 2077,Role-Playing
-277,Cyberpunk 2077,Action RPG
 279,The Elder Scrolls: Legends,Miscellaneous
 279,The Elder Scrolls: Legends,Board / Card Game
 281,The Outer Worlds,Role-Playing
@@ -772,7 +714,6 @@
 292,Half-Life: Alyx,Arcade
 293,Divinity: Original Sin,Action RPG
 293,Divinity: Original Sin,Role-Playing
-293,Divinity: Original Sin,Action RPG
 293,Divinity: Original Sin,Western-Style
 294,NBA 2K15,Sports
 294,NBA 2K15,Traditional
@@ -780,7 +721,6 @@
 294,NBA 2K15,Basketball
 294,NBA 2K15,Sim
 295,The Elder Scrolls IV: Oblivion,Role-Playing
-295,The Elder Scrolls IV: Oblivion,First-Person
 295,The Elder Scrolls IV: Oblivion,First-Person
 295,The Elder Scrolls IV: Oblivion,Western-Style
 296,Tribes of Midgard,Role-Playing
@@ -800,9 +740,7 @@
 301,Neverwinter,Massively Multiplayer Online
 301,Neverwinter,Massively Multiplayer
 301,Neverwinter,Fantasy
-301,Neverwinter,Fantasy
 302,Elite: Dangerous,Sci-Fi
-302,Elite: Dangerous,Large Spaceship
 302,Elite: Dangerous,Large Spaceship
 302,Elite: Dangerous,Simulation
 302,Elite: Dangerous,Space
@@ -846,13 +784,11 @@
 315,Metro Exodus,Arcade
 316,Final Fantasy VII,Role-Playing
 316,Final Fantasy VII,Console-style RPG
-316,Final Fantasy VII,Console-style RPG
 316,Final Fantasy VII,Japanese-Style
 319,Friday the 13th: The Game,Horror
 319,Friday the 13th: The Game,Action Adventure
 319,Friday the 13th: The Game,Survival
 320,Call of Duty: Black Ops II,Action
-320,Call of Duty: Black Ops II,Shooter
 320,Call of Duty: Black Ops II,Shooter
 320,Call of Duty: Black Ops II,First-Person
 320,Call of Duty: Black Ops II,Historic
@@ -869,7 +805,6 @@
 323,Quantum Break,General
 324,Mass Effect 2,Role-Playing
 324,Mass Effect 2,Action RPG
-324,Mass Effect 2,Action RPG
 326,For Honor,Action Adventure
 326,For Honor,General
 327,It Takes Two,Action Adventure
@@ -878,7 +813,6 @@
 328,F1 2020,Simulation
 328,F1 2020,Automobile
 329,Resident Evil 5,Action Adventure
-329,Resident Evil 5,Horror
 329,Resident Evil 5,Horror
 329,Resident Evil 5,Survival
 330,Slime Rancher,Action
@@ -902,14 +836,12 @@
 336,Farming Simulator 19,Career
 337,Grand Theft Auto: San Andreas,Action Adventure
 337,Grand Theft Auto: San Andreas,Modern
-337,Grand Theft Auto: San Andreas,Modern
 337,Grand Theft Auto: San Andreas,Open-World
 338,Forza Horizon 4,Racing
 338,Forza Horizon 4,Simulation
 338,Forza Horizon 4,Automobile
 340,Sid Meier's Civilization V,Strategy
 340,Sid Meier's Civilization V,Turn-Based
-340,Sid Meier's Civilization V,Historic
 340,Sid Meier's Civilization V,Historic
 340,Sid Meier's Civilization V,4X
 341,Outlast 2,Action Adventure
@@ -926,7 +858,6 @@
 345,Final Fantasy XIV: Heavensward,Massively Multiplayer
 348,Path of Exile,Action RPG
 348,Path of Exile,Role-Playing
-348,Path of Exile,Action RPG
 351,Gigantic,Strategy
 351,Gigantic,Real-Time
 351,Gigantic,MOBA
@@ -947,7 +878,6 @@
 365,Furi,3D
 366,No Man's Sky,Action
 366,No Man's Sky,General
-366,No Man's Sky,General
 366,No Man's Sky,Action Adventure
 366,No Man's Sky,Open-World
 367,Absolver,Role-Playing
@@ -964,21 +894,16 @@
 369,SMITE,Massively Multiplayer Online
 369,SMITE,Fantasy
 369,SMITE,MOBA
-369,SMITE,MOBA
 370,NieR: Automata,Role-Playing
 370,NieR: Automata,Action RPG
 371,Diablo II,Role-Playing
 371,Diablo II,Action RPG
-371,Diablo II,Action RPG
 373,Counter-Strike: Global Offensive,Action
-373,Counter-Strike: Global Offensive,Shooter
 373,Counter-Strike: Global Offensive,Shooter
 373,Counter-Strike: Global Offensive,First-Person
 373,Counter-Strike: Global Offensive,Modern
 373,Counter-Strike: Global Offensive,Tactical
-373,Counter-Strike: Global Offensive,Modern
 375,Mass Effect 3,Role-Playing
-375,Mass Effect 3,Action RPG
 375,Mass Effect 3,Action RPG
 377,Evolve,Action
 377,Evolve,Shooter
@@ -1010,7 +935,6 @@
 386,Dishonored 2,General
 387,Resident Evil,Action Adventure
 387,Resident Evil,Horror
-387,Resident Evil,Horror
 387,Resident Evil,Survival
 388,GreedFall,Role-Playing
 388,GreedFall,Action RPG
@@ -1029,7 +953,6 @@
 392,Minecraft Dungeons,Action RPG
 394,The Elder Scrolls III: Morrowind,Role-Playing
 394,The Elder Scrolls III: Morrowind,First-Person
-394,The Elder Scrolls III: Morrowind,First-Person
 394,The Elder Scrolls III: Morrowind,Western-Style
 396,FIFA 17,Sports
 396,FIFA 17,Team
@@ -1038,7 +961,6 @@
 397,XCOM: Enemy Within,Sci-Fi
 397,XCOM: Enemy Within,Strategy
 397,XCOM: Enemy Within,Turn-Based
-397,XCOM: Enemy Within,Sci-Fi
 397,XCOM: Enemy Within,General
 397,XCOM: Enemy Within,Tactics
 398,World War Z,Action
@@ -1092,9 +1014,7 @@
 417,Europa Universalis IV,Real-Time
 417,Europa Universalis IV,Historic
 417,Europa Universalis IV,General
-417,Europa Universalis IV,Historic
 418,Arma 3,Simulation
-418,Arma 3,General
 418,Arma 3,General
 419,Outriders,Action
 419,Outriders,Shooter
@@ -1114,7 +1034,6 @@
 423,Ori and the Will of the Wisps,Metroidvania
 425,The Evil Within,Horror
 425,The Evil Within,Action Adventure
-425,The Evil Within,Horror
 425,The Evil Within,Survival
 427,Cities: Skylines,City Building
 427,Cities: Skylines,Modern
@@ -1124,7 +1043,6 @@
 428,EVE Online,Role-Playing
 428,EVE Online,Massively Multiplayer Online
 428,EVE Online,Massively Multiplayer
-428,EVE Online,Sci-Fi
 428,EVE Online,Sci-Fi
 430,Kena: Bridge of Spirits,Action Adventure
 430,Kena: Bridge of Spirits,General
@@ -1185,7 +1103,6 @@
 449,World of Warships,General
 449,World of Warships,Action
 449,World of Warships,Simulation
-449,World of Warships,General
 449,World of Warships,Marine
 449,World of Warships,Combat
 450,Attack on Titan,Action
@@ -1222,16 +1139,13 @@
 466,Tom Clancy's Ghost Recon: Breakpoint,Action Adventure
 466,Tom Clancy's Ghost Recon: Breakpoint,Open-World
 468,The Forest,Horror
-468,The Forest,Horror
 468,The Forest,Action Adventure
 468,The Forest,Survival
 469,Call of Duty: Black Ops,Action
 469,Call of Duty: Black Ops,Shooter
-469,Call of Duty: Black Ops,Shooter
 469,Call of Duty: Black Ops,First-Person
 469,Call of Duty: Black Ops,Historic
 469,Call of Duty: Black Ops,Tactical
-469,Call of Duty: Black Ops,Historic
 469,Call of Duty: Black Ops,Arcade
 470,FIFA 16,Sports
 470,FIFA 16,Team
@@ -1259,7 +1173,6 @@
 478,The Sinking City,Survival
 479,Fortnite,Action
 479,Fortnite,General
-479,Fortnite,General
 479,Fortnite,Shooter
 479,Fortnite,Third-Person
 479,Fortnite,Tactical
@@ -1268,7 +1181,6 @@
 481,Dota 2,MOBA
 481,Dota 2,Strategy
 481,Dota 2,Real-Time
-481,Dota 2,MOBA
 482,Battlerite,Strategy
 482,Battlerite,Real-Time
 482,Battlerite,MOBA
@@ -1286,7 +1198,6 @@
 486,Godfall,Role-Playing
 486,Godfall,Action RPG
 488,Diablo II: Lord of Destruction,Role-Playing
-488,Diablo II: Lord of Destruction,Action RPG
 488,Diablo II: Lord of Destruction,Action RPG
 489,Artifact,Strategy
 489,Artifact,Turn-Based
@@ -1311,17 +1222,13 @@
 497,Life is Strange: True Colors,General
 498,Battlefield 4,Action
 498,Battlefield 4,Shooter
-498,Battlefield 4,Shooter
 498,Battlefield 4,First-Person
-498,Battlefield 4,Modern
 498,Battlefield 4,Modern
 498,Battlefield 4,Arcade
 499,Warframe,General
 499,Warframe,Shooter
 499,Warframe,Sci-Fi
-499,Warframe,General
 499,Warframe,Action
-499,Warframe,Shooter
 499,Warframe,Third-Person
 499,Warframe,Arcade
 501,Hand of Fate 2,Miscellaneous
@@ -1336,7 +1243,6 @@
 505,Hyper Scape,First-Person
 505,Hyper Scape,Tactical
 506,Diablo III,Role-Playing
-506,Diablo III,Action RPG
 506,Diablo III,Action RPG
 507,Hello Neighbor,Action
 507,Hello Neighbor,Adventure
@@ -1372,13 +1278,11 @@
 516,Minecraft,Sandbox
 516,Minecraft,First-Person
 516,Minecraft,Fantasy
-516,Minecraft,Fantasy
 517,Need for Speed Heat,Racing
 517,Need for Speed Heat,Arcade
 517,Need for Speed Heat,Automobile
 518,Wolcen: Lords of Mayhem,Action RPG
 518,Wolcen: Lords of Mayhem,Role-Playing
-518,Wolcen: Lords of Mayhem,Action RPG
 521,Far Cry New Dawn,Action
 521,Far Cry New Dawn,Shooter
 521,Far Cry New Dawn,First-Person

@@ -96,24 +96,52 @@ def plotting(df_game, df_all, juego):
                     # label= "Fortnite")
             plt.show()
 
+def info(juego):
+
+    # This function return main features of a specific game.
+
+    print(f"General features from {juego}: ")
+    df_genres = sp.select_sql_table("genres")
+    df_genres = df_genres[df_genres["videogame_id"] == juego]
+    print(f'Belongs to genres {", ".join(df_genres["genre"].to_list())}')
+
+    df_platforms = sp.select_sql_table("platforms")
+    df_platforms = df_platforms[df_platforms["videogame_id"] == juego]
+    print(f'It is available on the next platforms: {", ".join(df_platforms["platform"].to_list())}')
+
+
+    df_info_general = sp.select_sql_table("info_general")
+    df_info_general = df_info_general[df_info_general["videogame_id"] == juego]
+    print(f'The game developer is {", ".join(df_info_general["developer"].to_list())}')
+    print(f'Players type game: {", ".join(df_info_general["jugadores"].to_list())}')
+
+    df_games_unique = sp.select_sql_table("videogames_unique")
+    df_games_unique = df_games_unique[df_games_unique["videogame_id"] == juego]
+    print(f'Metacritics score is {list(df_games_unique["meta_score"])[0]}')
+    print(f'User review score is {list(df_games_unique["user_review"])[0]}')
+
 def data_visualization():
 
-    # This function returns visualizations for a game and a table, and varies depending on the variables
-    # we want to analyze.
+    # This function returns time graphics for a game and a table chosen from MySQL
+
     with open('../data/top10_games.pickle', 'rb') as game:
         games = pickle.load(game)
     list_games = games
     
-    list_of_tables = ["torneos", "info_general", "df_videogames_unique",
-                      "youtube", "twitch", "genres", "platforms"]
+    list_of_tables = ["torneos", "youtube", "twitch"]
+
     # Defining the input table
     juego = input(f"Choose a game from the list ({list_games}): ")
     table = input(f"Choose a table from MySQL({list_of_tables}): ")
     df = sp.select_sql_table(table)
 
+    # General features of the game
+
+    sp.info(juego)
+
     # Creating df for comparisons
     columns = df.columns
-    data = str.split(input(f"Choose the data you want to analyze ({df.columns}): "), ", ")
+    data = str.split(input(f"Choose the data you want to visualize ({df.columns}): "), ", ")
     df_all = df.groupby(by=df["fecha"].dt.year)[data].mean().reset_index()
     df_game = df[df["videogame_id"] == juego]
     df_game = df_game.groupby(by=df_game["fecha"].dt.year)[data].mean().reset_index()
