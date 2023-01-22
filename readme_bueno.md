@@ -1,6 +1,6 @@
 # Video games Industry Analysis
 
-![](../videogames_industry/images/videogames_title.jfif)
+![videogames](../videogames_industry/images/videogames_title.jfif)
 
 Since first desktop computer video games like Pac-Man, video games industry has been evolving to deliver the best entertainment to users.
 
@@ -48,7 +48,7 @@ In order to adapt to the number of requests available in the free trial account,
 
 All these datasets have allowed me to create a database in MySQL in order to make the video games analysis.
 
-![](../videogames_industry/images/diagram.png)
+![SQL Diagram](../videogames_industry/images/diagram.png)
 
 
 ## Data Analysis
@@ -64,21 +64,26 @@ which compare a single video game with its peers.
 
 Video games industry has reached a peak in 2021 and maybe it's time for VR to take the lead and boost this industry.
 
-
 ## Files structure
 
-- Data: all data obtained in the data acquisition process.
-- Images: images used in this readme.
-- Notebooks: all code used in the data wrangling, data cleaning, data analysis and data visualization process.
-- sql: database creation and some queries.
-- src: functions created to use in the notebooks files.
+- **Data:** all data obtained in the data acquisition process.
+- **Images:** images used in this readme.
+- **Notebooks:** all code used in the data wrangling, data cleaning, data analysis and data visualization process.
+- **sql:** database creation and some queries.
+- **src:** functions created to use in the notebooks files.
 
 ## Libraries
 
 [Pandas](https://pandas.pydata.org/)
+
 [Numpy](https://numpy.org/doc/)
+
 [Seaborn](https://seaborn.pydata.org/index.html)
+
 [Matplotlib](https://matplotlib.org/3.1.1/contents.html)
+
 [Requests](https://pypi.org/project/requests/2.7.0/)
+
 [SQL Alchemy](https://www.sqlalchemy.org/)
+
 [Selenium](https://www.selenium.dev/)
