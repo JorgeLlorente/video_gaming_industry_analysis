@@ -9,11 +9,6 @@ The goal of this project is divided into two parts:
 - Obtain a general overview from the video games industry.
 - Compare games to their peers and draw conclusions about their actual performance.
 
-## Why this project
-
- The reason why I have chosen this topic is due to my curiosity and interest in the video game industry.
-
- This is a 2 week project supervised by Ironhack Data Analytics Bootcamp instructors.
 
 ## Data acquisition
 
@@ -60,10 +55,6 @@ As explained at the beginning, I am going to analyze these data from two differe
 - The Jupyter Notebook: **"one_game_analysis"**,
 which compare a single video game with its peers.
 
-## Results
-
-Video games industry has reached a peak in 2021 and maybe it's time for VR to take the lead and boost this industry.
-
 ## Files structure
 
 - **Data:** all data obtained in the data acquisition process.
@@ -71,6 +62,15 @@ Video games industry has reached a peak in 2021 and maybe it's time for VR to ta
 - **Notebooks:** all code used in the data wrangling, data cleaning, data analysis and data visualization process.
 - **sql:** database creation and some queries.
 - **src:** functions created to use in the notebooks files.
+
+## Next Steps
+
+For this project, there are several things that could be done to improve it. Here are some ideas:
+
+- Getting cross-data conclusions using MySQL structure.
+- Creating a PDF report based on the visualizations for each game.
+- Creating functions to only compare each game to their peers (creating an intermediary function to decide the level of impact for each game.)
+- Creating predictions for the video game industry or games in particular based on their history.
 
 ## Libraries
 

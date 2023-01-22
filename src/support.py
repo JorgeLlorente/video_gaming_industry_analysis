@@ -8,6 +8,7 @@ from getpass import getpass
 from dotenv import load_dotenv
 import pickle
 import matplotlib.pyplot as plt
+import datetime
 import sys
 sys.path.append("../")
 
@@ -17,7 +18,7 @@ import src.support as sp
 # ------------------------------------------- General Overview -------------------------------------------
 
 def genre_through_time():
-    genre = input("Introduce a genre: ")
+    genre = input("Choose a genre: ")
     df_genre = df_genres2[df_genres2["genre"] == genre].groupby([df_genres2['release_date'].dt.year])["videogame_id"].count().reset_index()
 
     fig = plt.bar(df_genre["release_date"], df_genre["videogame_id"], color="blue", edgecolor="black", label="count")
@@ -51,6 +52,9 @@ def select_sql_table(table):
 
     query = f'''SELECT * FROM videogames_industry.{table};'''
     df = pd.read_sql(query, engine)
+
+    # Here we will include all columns that aren't imported in the right type
+
     if "fecha" in df.columns and "watch_time_hours" in df.columns:
         df["fecha"] = pd.to_datetime(df["fecha"])
         df["watch_time_hours"] = df["watch_time_hours"].astype("float")
@@ -65,7 +69,7 @@ def select_sql_table(table):
     return df
 
 
-def plotting(df_game, df_all, juego):
+def plotting_years(df_game, df_all, juego):
 
     # In this function we will visualize timeline plots depending on the game we are choosing and
     # the dataframes we have chosen. Dataframes depend on the columns we want to analyze.
@@ -80,27 +84,64 @@ def plotting(df_game, df_all, juego):
             plt.title(f"mean of {column} in {juego}")
             plt.xlabel("Year")
             plt.ylabel(column)
-            # plt.legend()
+            
             plt.plot(df_all["fecha"],
                     df_all[column],
                     color = "grey",
                     linewidth = 2,
-                    marker = "o")
-                    # label= "mean")
+                    marker = "o",
+                    label= "mean of games")
 
             plt.plot(df_game["fecha"],
                     df_game[column],
-                    color = "black",
+                    color = "blue",
                     linewidth = 2,
-                    marker = "o")
-                    # label= "Fortnite")
+                    marker = "o",
+                    label= "Fortnite")
+            plt.legend()
             plt.show()
+
+def plotting_months(df_game, df_all, juego, year):
+
+        # In this function we will visualize timeline plots depending on the game we are choosing and
+        # the dataframes we have chosen. Dataframes depend on the columns we want to analyze.
+
+            plt.rcParams["figure.figsize"] = [8.0, 2.0]
+
+            for i, column in zip(range(len(list(df_game.columns))), list(df_game.columns)):
+                if column == "fecha":
+                    pass
+                else:
+                    fig = plt.figure(f"Figure {i}")
+                    plt.title(f"mean of {column} in {juego} during year {year}")
+                    plt.xlabel("Months")
+                    plt.ylabel(column)
+                    meses = [datetime.date(2000, m, 1).strftime('%B') for m in range(13 - df_game.shape[0], 13)]
+
+                    plt.xticks(df_game["fecha"], meses, rotation=45)
+
+                    plt.plot(df_all["fecha"],
+                            df_all[column],
+                            color = "grey",
+                            linewidth = 2,
+                            marker = "o",
+                            label= "mean of games")
+
+                    plt.plot(df_game["fecha"],
+                            df_game[column],
+                            color = "blue",
+                            linewidth = 2,
+                            marker = "o",
+                            label= juego)
+                    plt.legend()
+                    plt.show()
+
 
 def info(juego):
 
     # This function return main features of a specific game.
 
-    print(f"General features from {juego}: ")
+    print(f"General features of {juego}: ")
     df_genres = sp.select_sql_table("genres")
     df_genres = df_genres[df_genres["videogame_id"] == juego]
     print(f'Belongs to genres {", ".join(df_genres["genre"].to_list())}')
@@ -126,8 +167,8 @@ def data_visualization():
 
     with open('../data/top10_games.pickle', 'rb') as game:
         games = pickle.load(game)
-    list_games = games
-    
+    list_games = games[1:]
+
     list_of_tables = ["torneos", "youtube", "twitch"]
 
     # Defining the input table
@@ -140,11 +181,26 @@ def data_visualization():
     sp.info(juego)
 
     # Creating df for comparisons
-    columns = df.columns
-    data = str.split(input(f"Choose the data you want to visualize ({df.columns}): "), ", ")
-    df_all = df.groupby(by=df["fecha"].dt.year)[data].mean().reset_index()
-    df_game = df[df["videogame_id"] == juego]
-    df_game = df_game.groupby(by=df_game["fecha"].dt.year)[data].mean().reset_index()
+    type = input("Do you want a global analysis or a year analysis? Choose between global or year: ")
 
+    if type == "global":
+
+        columns = df.columns
+        data = str.split(input(f"Choose the data you want to visualize ({df.columns}): "), ", ")
+        df_all = df.groupby(by=df["fecha"].dt.year)[data].mean().reset_index()
+        df_game = df[df["videogame_id"] == juego]
+        df_game = df_game.groupby(by=df_game["fecha"].dt.year)[data].mean().reset_index()
+        # Plotting
+        sp.plotting_years(df_game, df_all, juego)
+
+    elif type == "year":
+        year = int(input("Choose a year: "))
+        columns = df.columns
+        data = str.split(input(f"Choose the data you want to visualize ({df.columns}): "), ", ")
+        df_all = df.groupby(by=[df.fecha.dt.year, df.fecha.dt.month])[data].mean()
+        df_all = df_all.loc[year].reset_index()
+        df_game = df[df["videogame_id"] == juego]
+        df_game = df_game.groupby(by=[df.fecha.dt.year, df.fecha.dt.month])[data].mean()
+        df_game = df_game.loc[year].reset_index()
     # Plotting
-    sp.plotting(df_game,df_all,juego)
+        sp.plotting_months(df_game, df_all, juego, year)
