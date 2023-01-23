@@ -1,6 +1,6 @@
 # Video games Industry Analysis
 
-![videogames]("images/gaming.jpg")
+<img src="https://www.analyticssteps.com/backend/media/thumbnail/1878442/4498243_1635949638_How%20Blockchain%20is%20used%20in%20Gaming%20IndustryArtboard%201.jpg">
 
 Since first desktop computer video games like Pac-Man, video games industry has been evolving to deliver the best entertainment to users.
 
