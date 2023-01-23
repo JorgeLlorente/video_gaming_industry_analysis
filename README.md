@@ -42,7 +42,7 @@ In order to adapt to the number of requests available in the free trial account,
 
 After a process of data wrangling & data cleaning, I have created a database in MySQL to import all this data.
 
-![Diagram](../videogames_industry/images/diagram.png)
+![Diagram](images/diagram.png)
 
 ## Data Analysis
 
