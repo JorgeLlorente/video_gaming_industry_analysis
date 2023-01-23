@@ -11,7 +11,7 @@ The goal of this project is divided into two parts:
 
 ## Data acquisition
 
-### Metacritics Video games from Kaggle
+##  # Metacritics Video games from Kaggle
 
 This is a CSV containing around 18.000 video games released since 1995 until 2022.
 
@@ -48,7 +48,7 @@ After a process of data wrangling & data cleaning, I have created a database in 
 
 As explained at the beginning, I analyze these data from two different perspectives:
 
-- The Jupyter Notebook: **"Overview_Analysis"**, which contains a general analyisis of the video games industry.
+- The Jupyter Notebook: **"overview_analysis"**, which contains a general analyisis of the video games industry.
 
 - The Jupyter Notebook: **"one_game_analysis"**, which compares a single video game with its peers.
 
