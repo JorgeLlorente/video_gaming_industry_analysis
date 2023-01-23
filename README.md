@@ -1,6 +1,6 @@
 # Video games Industry Analysis
 
-![videogames]("images\gaming-image-data.webp")
+![videogames]("images\gaming.jpeg")
 
 Since first desktop computer video games like Pac-Man, video games industry has been evolving to deliver the best entertainment to users.
 
