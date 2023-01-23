@@ -1,6 +1,6 @@
 # Video games Industry Analysis
 
-![videogames](../videogames_industry/images/videogames_title.jfif)
+![videogames](images/videogames_title.jfif)
 
 Since first desktop computer video games like Pac-Man, video games industry has been evolving to deliver the best entertainment to users.
 
