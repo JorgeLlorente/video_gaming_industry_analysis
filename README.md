@@ -6,9 +6,8 @@ Since first desktop computer video games like Pac-Man, video games industry has 
 
 The goal of this project is divided into two parts:
 
-- Obtain a general overview from the video games industry.
-- Compare games to their peers and draw conclusions about their actual performance.
-
+- Obtaining a general overview from the video games industry.
+- Comparing games to their peers and draw conclusions about their performance.
 
 ## Data acquisition
 
@@ -18,42 +17,40 @@ This is a CSV containing around 18.000 video games released since 1995 until 202
 
 ### Using Selenium to obtain genres
 
-I have used Metacritics URL to also extract genres from a subset of games (around 500)
+I have used Metacritics URL to also extract genres from a subset of games (around 500).
 
-### Web scraping to obtain tourneys
+### Web scraping to obtain Esports tourneys
 
-I have used a web page called "esportsearning" to obtain all the tourneys played since 2012.
+I have used web scraping tools to obtain all Esports tourneys organized worldwide since 2012.
 
-### Using Selenium to obtain Twitch info about video games performance
+### Using Selenium to obtain Twitch info about video games impact
 
-In this dataset, I have downloaded a total of 84 .csv files about video games performance in Twitch
+In this dataset, I have downloaded a total of 84 *.csv* files about video games performance in Twitch.
 
-### Using Selenium and Youtube API to obtain info about video games performance
+### Using Selenium and Youtube API to obtain Youtube info about video games impact
 
-In order to adapt to the number of requests available in the free trial account, I did this data extraction in two different steps:
+In order to adapt to the number of requests available in the free trial account, I divided this data extraction into two parts:
 
 1. I used Selenium and the advanced search tools from Youtube to obtain videos IDs.
 
 2. I used the Youtube API to obtain data from this videos IDs. Info about this API:
-    - Base URL used: [Youtube API](https://www.googleapis.com/youtube/v3/videos)
+    - Base URL used: https://www.googleapis.com/youtube/v3/videos
     - Parameters:
         - Part: snippet, contentDetails, statistics. It provides detailed information about a video such views, comments, likes, date of publication or length of the video.
         - id: video_id. The alphanumeric code used in the URL to identify a video.
         - key: token.
 
-All these datasets have allowed me to create a database in MySQL in order to make the video games analysis.
+After a process of data wrangling & data cleaning, I have created a database in MySQL to import all this data.
 
-![SQL Diagram](../videogames_industry/images/diagram.png)
-
+![Diagram](../videogames_industry/images/diagram.png)
 
 ## Data Analysis
 
-As explained at the beginning, I am going to analyze these data from two different perspectives:
+As explained at the beginning, I analyze these data from two different perspectives:
 
-- The Jupyter Notebook: **"Overview_Analysis"**, which makes a general analyisis of the video games industry.
+- The Jupyter Notebook: **"Overview_Analysis"**, which contains a general analyisis of the video games industry.
 
-- The Jupyter Notebook: **"one_game_analysis"**,
-which compare a single video game with its peers.
+- The Jupyter Notebook: **"one_game_analysis"**, which compares a single video game with its peers.
 
 ## Files structure
 
@@ -68,9 +65,12 @@ which compare a single video game with its peers.
 For this project, there are several things that could be done to improve it. Here are some ideas:
 
 - Getting cross-data conclusions using MySQL structure.
-- Creating a PDF report based on the visualizations for each game.
-- Creating functions to only compare each game to their peers (creating an intermediary function to decide the level of impact for each game.)
-- Creating predictions for the video game industry or games in particular based on their history.
+- Creating a PDF report based on the graphics created for each game.
+- Creating functions to only compare each game to their peers (creating an intermediary function to decide the level of impact for each game).
+- Creating predictions for the video game industry or a partircular game based on their history.
+- Measuring video game updates through Twitch & Youtube videos views and likes.
+- Comparing Youtube & Twitch.
+- Creating a server to feed the database with Youtube Info (free trial API: 10.000 requests per day)
 
 ## Libraries
 

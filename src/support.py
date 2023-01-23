@@ -17,7 +17,7 @@ import src.support as sp
 
 # ------------------------------------------- General Overview -------------------------------------------
 
-def genre_through_time():
+def genre_over_time():
     genre = input("Choose a genre: ")
     df_genre = df_genres2[df_genres2["genre"] == genre].groupby([df_genres2['release_date'].dt.year])["videogame_id"].count().reset_index()
 
@@ -40,9 +40,13 @@ def sql_connection():
 def select_sql_table(table):
 
     # This function does the next three things
-    # 1. Function makes the connection with MySQL.
-    # 2. Function corrects columns type.
-    # 3. Function filter table by top 10 videogames.
+    # 1. It creates the connection with MySQL.
+    # 2. It corrects columns type.
+    # 3. It filters table by top 10 videogames.
+
+
+    # Args
+    # - Table: name of one of the tables contained in the database.
 
 
     db_name = "videogames_industry"
@@ -74,6 +78,11 @@ def plotting_years(df_game, df_all, juego):
     # In this function we will visualize timeline plots depending on the game we are choosing and
     # the dataframes we have chosen. Dataframes depend on the columns we want to analyze.
 
+    # Args:
+    # - df_game: table filtered by game.
+    # - df_all: table containing all games.
+    # - juego: game we want to filter in df_game.
+
     plt.rcParams["figure.figsize"] = [8.0, 2.0]
 
     for i, column in zip(range(len(list(df_game.columns))), list(df_game.columns)):
@@ -84,7 +93,7 @@ def plotting_years(df_game, df_all, juego):
             plt.title(f"mean of {column} in {juego}")
             plt.xlabel("Year")
             plt.ylabel(column)
-            
+
             plt.plot(df_all["fecha"],
                     df_all[column],
                     color = "grey",
@@ -116,7 +125,7 @@ def plotting_months(df_game, df_all, juego, year):
                     plt.title(f"mean of {column} in {juego} during year {year}")
                     plt.xlabel("Months")
                     plt.ylabel(column)
-                    meses = [datetime.date(2000, m, 1).strftime('%B') for m in range(13 - df_game.shape[0], 13)]
+                    meses = [datetime.date(year, m, 1).strftime('%B') for m in range(13 - df_game.shape[0], 13)]
 
                     plt.xticks(df_game["fecha"], meses, rotation=45)
 
@@ -144,22 +153,22 @@ def info(juego):
     print(f"General features of {juego}: ")
     df_genres = sp.select_sql_table("genres")
     df_genres = df_genres[df_genres["videogame_id"] == juego]
-    print(f'Belongs to genres {", ".join(df_genres["genre"].to_list())}')
+    print(f'- Belongs to genres {", ".join(df_genres["genre"].to_list())}')
 
     df_platforms = sp.select_sql_table("platforms")
     df_platforms = df_platforms[df_platforms["videogame_id"] == juego]
-    print(f'It is available on the next platforms: {", ".join(df_platforms["platform"].to_list())}')
+    print(f'- It is available on the next platforms: {", ".join(df_platforms["platform"].to_list())}')
 
 
     df_info_general = sp.select_sql_table("info_general")
     df_info_general = df_info_general[df_info_general["videogame_id"] == juego]
-    print(f'The game developer is {", ".join(df_info_general["developer"].to_list())}')
-    print(f'Players type game: {", ".join(df_info_general["jugadores"].to_list())}')
+    print(f'- The game developer is {", ".join(df_info_general["developer"].to_list())}')
+    print(f'- Players type game: {", ".join(df_info_general["jugadores"].to_list())}')
 
     df_games_unique = sp.select_sql_table("videogames_unique")
     df_games_unique = df_games_unique[df_games_unique["videogame_id"] == juego]
-    print(f'Metacritics score is {list(df_games_unique["meta_score"])[0]}')
-    print(f'User review score is {list(df_games_unique["user_review"])[0]}')
+    print(f'- Metacritics score is {list(df_games_unique["meta_score"])} out of 100')
+    print(f'- User review score is {list(df_games_unique["user_review"])} out of 10')
 
 def data_visualization():
 
@@ -171,14 +180,13 @@ def data_visualization():
 
     list_of_tables = ["torneos", "youtube", "twitch"]
 
-    # Defining the input table
+    # General features of the game
     juego = input(f"Choose a game from the list ({list_games}): ")
+    sp.info(juego)
+
+    # Defining the input table
     table = input(f"Choose a table from MySQL({list_of_tables}): ")
     df = sp.select_sql_table(table)
-
-    # General features of the game
-
-    sp.info(juego)
 
     # Creating df for comparisons
     type = input("Do you want a global analysis or a year analysis? Choose between global or year: ")
@@ -190,7 +198,8 @@ def data_visualization():
         df_all = df.groupby(by=df["fecha"].dt.year)[data].mean().reset_index()
         df_game = df[df["videogame_id"] == juego]
         df_game = df_game.groupby(by=df_game["fecha"].dt.year)[data].mean().reset_index()
-        # Plotting
+
+        # Plotting global
         sp.plotting_years(df_game, df_all, juego)
 
     elif type == "year":
@@ -202,5 +211,6 @@ def data_visualization():
         df_game = df[df["videogame_id"] == juego]
         df_game = df_game.groupby(by=[df.fecha.dt.year, df.fecha.dt.month])[data].mean()
         df_game = df_game.loc[year].reset_index()
-    # Plotting
+
+        # Plotting one year
         sp.plotting_months(df_game, df_all, juego, year)
