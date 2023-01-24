@@ -96,7 +96,7 @@ As an example, the next two graphs show the performance of Fortnite in Youtube o
 
 As we can easily observe, Fortnite is way above the mean of other games. As a fact, Fortnite became the most popular game in the world that year (even the famous movie saga Avengers introduced a scene on the last movie where Thor was playing this game).
 
-## 4. Files structure
+## 4. Repository structure
 
 - **Data:** all data obtained in the data acquisition process.
 - **Images:** images used in this readme.
