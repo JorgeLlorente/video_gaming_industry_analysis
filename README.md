@@ -1,5 +1,7 @@
 # Video games Industry Analysis
 
+## 1. Introduction
+
 <img src="https://www.analyticssteps.com/backend/media/thumbnail/1878442/4498243_1635949638_How%20Blockchain%20is%20used%20in%20Gaming%20IndustryArtboard%201.jpg">
 
 Since first desktop computer video games like Pac-Man, video games industry has been evolving to deliver the best entertainment to users.
@@ -9,7 +11,7 @@ The goal of this project is divided into two parts:
 - Obtaining a general overview from the video games industry.
 - Comparing games to their peers and draw conclusions about their performance.
 
-## Data acquisition
+## 2. Data acquisition
 
 **Metacritics Video games from Kaggle**: This is a CSV containing around 18.000 video games released since 1995 until 2022.
 
@@ -34,11 +36,11 @@ After a process of data wrangling & data cleaning, I have created a database in 
 
 ![Diagram](images/diagram.png)
 
-## Data Analysis & Conclusions
+## 3. Data Analysis & Conclusions
 
 As explained at the beginning, I analyze these data from two different perspectives
 
-### General Overview
+### 3.1 General Overview
 
 - The Jupyter Notebook: **"overview_analysis"** contains a general analyisis of the video games industry.
 
@@ -80,7 +82,7 @@ In this graph we can see the genre evolution over time. Action is the main genre
 
 This last graph is shown in order to see how streaming platforms are performing since 2016. The graph shows the evolution of watch time hours per year. There's a huge increase since 2016 until 2021, where it has reeached a peak. In my opinion, it's due to the fact that the streaming industry is a bubble that has had already its peak (thanks in a big part to Fortnite) and it will lower their figures and will establish at a point where it will be at equilibrium.
 
-### One Game Analysis
+### 3.2 One Game Analysis
 
 - The Jupyter Notebook: **"one_game_analysis"**, which compares a single video game with its peers.
 
@@ -94,7 +96,7 @@ As an example, the next two graphs show the performance of Fortnite in Youtube o
 
 As we can easily observe, Fortnite is way above the mean of other games. As a fact, Fortnite became the most popular game in the world that year (even the famous movie saga Avengers introduced a scene on the last movie where Thor was playing this game).
 
-## Files structure
+## 4. Files structure
 
 - **Data:** all data obtained in the data acquisition process.
 - **Images:** images used in this readme.
@@ -102,7 +104,7 @@ As we can easily observe, Fortnite is way above the mean of other games. As a fa
 - **sql:** database creation and some queries.
 - **src:** functions created to use in the notebooks files.
 
-## Next Steps
+## 5. Next Steps
 
 For this project, there are several things that could be done to improve it. Here are some ideas:
 
@@ -112,11 +114,11 @@ For this project, there are several things that could be done to improve it. Her
 - Measuring video game updates through Twitch & Youtube videos views and likes.
 - Creating a server to feed the database with Youtube info.
 
-## Support
+## 6. Support
 
 If you have any issue with the code of this project, you can contact me via email: jorgellorente1994@gmail.com
 
-## Libraries
+## 7. Libraries
 
 [Pandas](https://pandas.pydata.org/)
 
