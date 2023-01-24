@@ -11,15 +11,15 @@ The goal of this project is divided into two parts:
 
 ## Data acquisition
 
-*Metacritics Video games from Kaggle*: This is a CSV containing around 18.000 video games released since 1995 until 2022.
+**Metacritics Video games from Kaggle**: This is a CSV containing around 18.000 video games released since 1995 until 2022.
 
-*Using Selenium to obtain genres*: I have used Metacritics URL to also extract genres from a subset of games (around 500).
+**Using Selenium to obtain genres**: I have used Metacritics URL to also extract genres from a subset of games (around 500).
 
-*Web scraping to obtain Esports tourneys*: I have used web scraping tools to obtain all Esports tourneys organized worldwide since 2012.
+**Web scraping to obtain Esports tourneys**: I have used web scraping tools to obtain all Esports tourneys organized worldwide since 2012.
 
-*Using Selenium to obtain Twitch info about video games impact*: in this dataset, I have downloaded a total of 84 *.csv* files about video games performance in Twitch.
+**Using Selenium to obtain Twitch info about video games impact**: in this dataset, I have downloaded a total of 84 *.csv* files about video games performance in Twitch.
 
-*Using Selenium and Youtube API to obtain Youtube info about video games impact*: in order to adapt to the number of requests available in the free trial account, I divided this data extraction into two parts:
+**Using Selenium and Youtube API to obtain Youtube info about video games impact**: in order to adapt to the number of requests available in the free trial account, I divided this data extraction into two parts:
 
 1. I used Selenium and the advanced search tools from Youtube to obtain videos IDs.
 
