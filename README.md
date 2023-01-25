@@ -2,7 +2,7 @@
 
 ## 1. Introduction
 
-- This is a 2 Week Data Analysis Project for the Data Analytics Bootcamp at Ironhack. -
+--- This is a 2 Week Data Analysis Project for the Data Analytics Bootcamp at Ironhack. ---
 
 As my first project as Data Analyst student, I chose the video gaming industry to challenge myself in order to expand my skills in the Data Analytics world. I love games since I was a child so analyzing trends in this industry is for sure an incredible way to start my path in the Data World.
 
