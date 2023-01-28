@@ -32,3 +32,19 @@ WHERE viewcount > 100000
 GROUP BY videogame_id
 ORDER BY visitas DESC;
 
+SELECT twitch.videogame_id, genre, watch_time_hours
+FROM twitch
+INNER JOIN genres ON twitch.videogame_id = genres.videogame_id
+ORDER BY watch_time_hours DESC
+LIMIT 10;
+
+
+SELECT twitch.videogame_id, jugadores, rating, MAX(watch_time_hours)
+FROM twitch
+INNER JOIN info_general ON twitch.videogame_id = info_general.videogame_id;
+
+SELECT twitch.videogame_id, dinero, torneos, MAX(watch_time_hours)
+FROM twitch
+INNER JOIN torneos ON twitch.videogame_id = torneos.videogame_id;
+
+
