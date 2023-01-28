@@ -2,14 +2,16 @@
 
 ## 1. Introduction
 
-<img src="https://www.analyticssteps.com/backend/media/thumbnail/1878442/4498243_1635949638_How%20Blockchain%20is%20used%20in%20Gaming%20IndustryArtboard%201.jpg">
+--- This is a 2 Week Data Analysis Project for the Data Analytics Bootcamp at Ironhack. ---
 
-Since first desktop computer video games like Pac-Man, video games industry has been evolving to deliver the best entertainment to users.
+As my first project as Data Analyst student, I chose the video gaming industry to challenge myself in order to expand my skills in the Data Analytics world. I love games since I was a child so analyzing trends in this industry is for sure an incredible way to start my path in the Data World.
+
+<img src="https://www.analyticssteps.com/backend/media/thumbnail/1878442/4498243_1635949638_How%20Blockchain%20is%20used%20in%20Gaming%20IndustryArtboard%201.jpg">
 
 The goal of this project is divided into two parts:
 
 - Obtaining a general overview from the video games industry.
-- Comparing games to their peers and draw conclusions about their performance.
+- Creating a tool to compare games to their peers and draw conclusions about their performances.
 
 ## 2. Data acquisition
 
